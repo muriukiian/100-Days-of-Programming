@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: aquamarine;">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      Recipes | daily
+    </title>
+    <style>
+      h1,h2,h3 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-stretch: expanded;
+      }
+      .img {
+        height: 200px;
+        width: 400px;
+      }
+      .img-align-left {
+        float: left;
+        margin-right: 30px;
+      }
+      .img-align-right {
+        float: right;
+        margin-left: 30px;
+      }
+      .grid {
+        display: flex;
+        grid-template-columns: repeat(auto-fit, minmax(200px 1fr));
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="home">
+      <h1>
+        Home
+      </h1>
+      <a href="#home">Home</a>
+      <a href="#account">Create Account</a>
+      <a href="#subscribe">Our plans.</a>
+      <a href="#favorites">Favorite food</a>
+      <div class="grid">
+        <img src="1528px-Sprite_Logo.svg.png" alt="picture here" class="img">
+        <img src="fries.jpg" alt="picture there" class="img">
+        <img src="Lambp.jpg" alt="picture me" class="img">
+      </div>
+    </section>
+    <section id="account">
+      <h2>Create Account</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name: ">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password: " aria-describedby="password-hint">
+        <div id="password-hint">
+          <strong>NOTE:</strong><u>Password must be atleast 8 characters long.</u>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section id="subscribe">
+      <h2>Subscription checkout</h2>
+      <form>
+        <label>Select your preferred mode of payment: </label><br>
+        <input type="radio" id="Master Card" name="paymentmethod" value="Master Card">
+        <label for="Master Card">Master Card</label><br>
+        <input type="radio" id="PayPal" name="paymentmethod" value="PayPal">
+        <label for="PayPal">Paypal</label><br>
+        <input type="radio" id="Mpesa" name="paymentmethod" value="Mpesa">
+        <label for="Mpesa">Mpesa</label><br>
+        <input type="radio" id="Payd" name="paymentmethod" value="Payd">
+        <label for="Payd">Payd</label><br>
+        <input type="radio" id="Credit Card" name="paymentmethod" value="Credit Card">
+        <label for="Credit Card">Credit Card</label><br>
+        <input type="radio" id="Ca$h app" name="paymentmethod" value="Ca$h app">
+        <label for="Ca$h app">Ca$h app</label><br>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <section id="favorites">
+      <form>
+        <label>Pick your favorite:</label><br>
+        <input type="checkbox" id="KFC" name="favfood" value="KFC">
+        <label for="KFC">KFC chicken</label><br>
+        <input type="checkbox" id="Debonairs Pizza" name="favfood" value="Debonairs Pizza">
+        <label for="Debonairs Pizza">Debonairs Pizza</label><br>
+        <input type="checkbox" id="McDonalds" name="favfood" value="McDonalds">
+        <label for="McDonalds">McDonalds</label><br>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <a href="#home">Back Home.</a>
+  </body>
+</html>
