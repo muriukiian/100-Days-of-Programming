@@ -3,7 +3,11 @@ user_list = []
 for i in range(5):
   user_number = int(input("Enter your unique number: "))
   user_list.append(user_number)
-print(f'The list of integers is {user_list}.')
+sum1 = 0
+for user in user_list:
+  sum1 += user
+print(sum1)
+#print(f'The list of integers is {user_list}.')
 
 #Create a tuple containing the names of five of your favorite books. Then, use a for loop to print each book name on a separate line.
 favBooks = ('Harry Potter','Hardy books','Scooby doo series','Rich dad poor dad','The art of war')
@@ -29,6 +33,8 @@ for i in range(5):
   number_set_b = int(input('Enter set_b number: '))
   set_a.add(number_set_a)
   set_b.add(number_set_b)
+print(set_a)
+print(set_b)
 for num in set_a:
   for num2 in set_b:
     if num == num2: set_c.add(num)
