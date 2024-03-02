@@ -33,12 +33,12 @@ for i in range(5):
   number_set_b = int(input('Enter set_b number: '))
   set_a.add(number_set_a)
   set_b.add(number_set_b)
-print(set_a)
-print(set_b)
+#print(set_a)
+#print(set_b)
 for num in set_a:
   for num2 in set_b:
     if num == num2: set_c.add(num)
-print(set_c)
+print(f'The common elements in the two sets are{set_c}')
 
 #Create a program that stores a list of words. Then, use list comprehension to create a new list that contains only the words that have an odd number of characters.
 words=[]
