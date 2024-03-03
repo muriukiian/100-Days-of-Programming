@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: tomato;">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      100 days of code | Sign in
+    </title>
+  </head>
+  <style>
+    img {
+      width:1300px;
+      height:400px;
+    }
+    .img-align-right {
+      float:right;
+      margin: left 30px;
+    }
+    .img-align-left {
+      float:left;
+      margin: right 30px;
+    }
+    .img-grid {
+      display:flex;
+      grid-template-columns: repeat(auto-fit minmax(200px 1fr));
+      gap: 20px;
+    }
+    .form {
+      padding-left: 500px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      container: unset;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>
+        <strong>100 days of software development</strong>
+      </h1>
+    </header>
+    <section>
+      <img src="women-in-tech-1.jpg" alt=" woman in tech" class="img">
+      <form action="" method="post" class="form">
+        <label><u><strong>Sign in to your account.</strong></u></label><br>
+        <label for="name">Username</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter username" required autocomplete="off"><br>
+        <label for="password">Password</label><br>
+        <input type="password" id="password" name="password" placeholder="password" required autocomplete="off" aria-describedby="hint"><br>
+        <div id="hint">
+          <u>Password must have atleast 8 characters</u>
+        </div><br>
+        <button type="submit">Sign In</button><br>
+        <label>Don't have an account? <a href="C:\Users\user\OneDrive\Desktop\100days\main.html" target=_blank>Sign up here! </a></label>
+      </form>
+    </section>
+  </body>
+</html>

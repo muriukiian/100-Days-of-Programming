@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: tomato;">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      100 days of code | course selection
+    </title>
+  </head>
+  <style>
+    img {
+      width:1300px;
+      height:400px;
+    }
+    .img-align-right {
+      float:right;
+      margin: left 30px;
+    }
+    .img-align-left {
+      float:left;
+      margin: right 30px;
+    }
+    .img-grid {
+      display:flex;
+      grid-template-columns: repeat(auto-fit minmax(200px 1fr));
+      gap: 20px;
+    }
+    .form {
+      padding-left: 500px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      container: unset;
+    }
+  </style>
+  <body>
+    <section>
+      <header>
+        <h1>
+          <strong>100 days of software development</strong>
+        </h1>
+      </header>
+      <img src="women-in-tech-1.jpg" alt="woman in tech" class="img">
+      <form action="" method="post" class="form">
+        <label><u><strong>Select your preferred course</strong></u></label><br>
+        <input type="radio" id="software development" name="course_selection" value="software development">
+        <label for="software development">Software development.</label><br>
+        <input type="radio" id="data analytics" name="course_selection" value="data analytics">
+        <label for="data analytics">Data analytics</label><br>
+        <input type="radio" id="datascience" name="course_selection" value="datascience">
+        <label for="datascience">Data Science</label><br>
+        <input type="radio" id="robotics" name="course_selection" value="robotics">
+        <label for="robotics">Robotics</label><br>
+        <input type="radio" id="AI" name="course_selection" value="AI">
+        <label for="AI">Artificial Intelligence (AI)</label><br>
+        <button type="submit">Select</button>
+      </form>
+    </section>
+  </body>
+</html>

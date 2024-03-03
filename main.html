@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: tomato;">
+  <head>
+    <meta charset="UTF-8">
+    <title>
+      100 days of code | Sign up
+    </title>
+  </head>
+  <style>
+    img {
+      width:1300px;
+      height:400px;
+    }
+    .img-align-right {
+      float:right;
+      margin: left 30px;
+    }
+    .img-align-left {
+      float:left;
+      margin: right 30px;
+    }
+    .img-grid {
+      display:flex;
+      grid-template-columns: repeat(auto-fit minmax(200px 1fr));
+      gap: 20px;
+    }
+    .form {
+      padding-left: 500px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      container: unset;
+    }
+  </style>
+  <body>
+    <header>
+      <h1>
+        <strong>100 days of software development</strong>
+      </h1>
+    </header>
+    <section>
+      <img src="women-in-tech-1.jpg" alt="image of technology" class="img">
+      <form action="" method="post" class="form">
+        <label>
+          <u>
+            <strong>Create account.</strong>
+          </u>
+        </label><br>
+        <label for="email">Email</label><br>
+        <input type="text" name="email" id="email" placeholder="Enter your email address" required><br>
+        <label for="password">Password</label><br>
+        <input type="password" name="password" id="password" placeholder="Enter password" required autocomplete="off"><br>
+        <label for="password">Confirm password</label><br>
+        <input type="password" name="password" id="password" placeholder="Confirm password" aria-describedby="hint" autocomplete="off" required><br>
+        <div id="hint">
+          <u>Password must be atleast 8 characters</u>
+        </div>
+        <button type="submit">Create account</button><br>
+        <label>Already have an account? <a href="C:\Users\user\OneDrive\Desktop\100days\sign_in.html" target="_blank">Sign in here.</a></label>
+      </form>
+    </section>
+  </body>
+</html>
