@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #CE0E2D">
+  <head>
+    <style>
+      .h1{
+        font-stretch: expanded;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 500;
+        font-size: larger;
+      }
+      h2,h3 {
+        font-style: oblique;
+        font-stretch: expanded;
+      }
+      .background {
+        background-color: white;
+      }
+      .image-align-right{
+        float: right;
+        margin-left: 30px;
+        border-bottom: 10px;
+      }
+      .image-align-left {
+        float: left;
+        margin-right: 30px;
+        border-bottom: 10px;
+      }
+      .img-grid {
+        display: flex;
+        grid-template-columns: repeat(auto-fit, minmax(200px 1fr));
+        gap: 10px;
+      }
+      .image {
+        width: 800px;
+        height: 300px;
+      }
+      .center {
+        margin-left: 350px;;
+      }
+    </style>
+    <meta charset="UTF-8">
+    <title>
+      Huawei Smart Devices
+    </title>
+  </head>
+  <body>
+    <section>
+      <div class="img-grid">
+        <img src="huawei2.jpg" alt="Huawei Logo" class="image">
+        <img src="huawei3.webp" alt="huawei device" class="image">
+      </div>
+    </section>
+    <section class="background">
+      <h1 class="h1">
+        Welcome to the <em>HUAWEI</em> user platform.
+      </h1>
+      <p class="h1">
+        Dreams inspire creativity.
+      </p>
+      <form action="" method="get">
+        <label class="h1">Sign in</label><br>
+        <label for="name" class="h1">Username</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter username" required><br>
+        <label for="password" class="h1">Password</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter password" required><br>
+        <button type="submit" class="h1">Sign in</button><br>
+        <label class="h1">Not a member yet? <a href="" target="_blank">Sign up here!</a></label>
+      </form>
+      <form class="h1">
+        <label><u>Select your continent of residence</u></label><br>
+        <input type="radio" id="Africa" name="continent" value="Africa">
+        <label for="Africa">Africa</label><br>
+        <input type="radio" id="Asia" name="continent" value="Asia">
+        <label for="Asia">Asia</label><br>
+        <input type="radio" id="Europe" name="continent" value="Europe">
+        <label for="Europe">Europe</label><br>
+        <input type="radio" id="America" name="continent" value="America">
+        <label for="America">America</label><br>
+      </form>
+      <form action="" method="get" class="h1">
+        <label for="device_name">Select a device: </label>
+        <select name="device_name" id="device_name"><br>
+          <option value="Huawei P60 Art">Huawei P60 Art</option><br>
+          <option value="Huawei P60 PRO 5G">Huawei P60 PRO 5G</option><br>
+          <option value="Huawei P40">Huawei P40</option><br>
+          <option value="Huawei Y360">Huawei Y360</option><br>
+          <option value="Huawei P6">Huawei P6</option><br>
+      </form> 
+    </section>
+  </body>
+</html>
