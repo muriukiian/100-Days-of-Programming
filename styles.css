@@ -1,0 +1,17 @@
+.box {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 33%;
+  gap: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 30px;
+}
+.img-grid {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(200, 1fr));
+  gap: 10px;
+}
